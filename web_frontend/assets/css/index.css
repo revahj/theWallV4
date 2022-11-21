@@ -1,0 +1,110 @@
+#wrapper section {
+  background-color: #1D1F2B;
+  border-radius: 20px;
+  height: 671px;
+  margin: 100px auto 0px auto;
+  padding: 75px 276px 50px 79px;
+  position: relative;
+  width: 876px;
+}
+#wrapper section::after {
+  background-color: #3B3C43;
+  background-image: url("../images/right_panel_sign_up_in.svg");
+  background-position: -30px 0px;
+  background-repeat: no-repeat;
+  border-radius: 0px 20px 20px 0px;
+  content: "";
+  display: inline-block;
+  height: 671px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  vertical-align: top;
+  width: 205px;
+}
+#wrapper section img {
+  position: absolute;
+  right: 60px;
+  top: 75px;
+  z-index: 2;
+}
+#wrapper section h2 {
+  color: #ffffff;
+  font: 21px/24px robotoRegular, sans-serif;
+  padding-left: 76px;
+  position: relative;
+  margin-bottom: 3px;
+}
+#wrapper section h2::before {
+  background-image: url("../images/the_wall_icon.svg");
+  content: "";
+  display: inline-block;
+  height: 46px;
+  left: 0px;
+  position: absolute;
+  vertical-align: top;
+  width: 46px;
+}
+#wrapper section h1 {
+  color: #6d7186;
+  font: 17px/20px robotoRegular, sans-serif;
+  padding-left: 76px;
+}
+#wrapper section form {
+  margin-top: 50px;
+}
+#wrapper section form .form_control {
+  display: inline-block;
+  vertical-align: top;
+  width: 250px;
+}
+#wrapper section form .form_control:first-child {
+  margin-right: 17px;
+}
+#wrapper section form label {
+  color: #6d7186;
+  display: block;
+  font: 14px/16px robotoRegular, sans-serif;
+  margin-bottom: 8px;
+}
+#wrapper section form input {
+  background-color: #31354F;
+  border-radius: 9px;
+  border: 1px solid #31354F;
+  color: #ffffff;
+  display: block;
+  font: 16px/16px robotoRegular;
+  height: 60px;
+  margin-bottom: 20px;
+  outline: none;
+  padding-left: 20px;
+  width: 100%;
+}
+#wrapper section form input:focus {
+  border-color: #00a3ff;
+}
+#wrapper section form button {
+  background-color: #00a3ff;
+  border-radius: 9px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font: 21px/24px robotoBold, sans-serif;
+  height: 60px;
+  margin: 10px 0px 36px 0px;
+  outline: none;
+  width: 100%;
+}
+#wrapper section form p {
+  color: #6d7186;
+  font: 17px/20px robotoRegular, sans-serif;
+  text-align: center;
+}
+#wrapper section form p a {
+  color: #00a3ff;
+  font: 17px/20px robotoRegular, sans-serif;
+  text-decoration: none;
+}
+#wrapper section form p a:hover {
+  text-decoration: underline;
+}

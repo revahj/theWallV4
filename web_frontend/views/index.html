@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.png"/>
+    <meta name="description" content="Signup form of the wall assignment">
+    <meta name="author" content="Jhaver Gurtiza">
+    <title>The Wall | Sign Up Page</title>
+
+    <!-- Less -->
+    <link rel="stylesheet" href="../assets/css/index.css"/>
+    <link rel="stylesheet" href="../assets/css/global.css"/>
+
+</head>
+<body>
+    <div id="wrapper">
+        <section id="signup_container">
+            <img src="../assets/images/the_wall_big_logo.svg" alt="The Wall Logo">
+            <h2>Welcome</h2>
+            <h1>Register a new account.</h1>
+            <form id="signup_form">
+                <div class="form_control">
+                    <label for="first_name_input">First Name</label>
+                    <input type="text" id="first_name_input">
+                </div>
+                <div class="form_control">
+                    <label for="last_name_input">Last Name</label>
+                    <input type="text" id="last_name_input">
+                </div>
+                <label for="email_input">Email</label>
+                <input type="email" id="email_input">
+                <label for="password_input">Password</label>
+                <input type="password" id="password_input">
+                <button type="submit">Sign up</button>
+                <p>Already have an account? <a href="login.html">Login</a></p>
+            </form>
+        </section>
+        <a href="wall.html" class="hidden" id="dashboard_link"></a>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="./../assets/js/index.js"></script>
+</body>
+</html>

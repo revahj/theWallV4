@@ -1,0 +1,232 @@
+@blue: #00A3FF;
+@font: #6D7186;
+@white: #FFFFFF;
+@dark_gray: #3B3C43;
+@green: #85EB7E;
+@red: #EB5757;
+@orange: #FFD34F;
+@comment_text: #9496A1; 
+
+#wrapper {
+    header {
+        background-color: #1E1F25;
+        height: 62px;
+        padding: 0px 0px;
+        position: fixed;
+        top: 0px;
+        vertical-align: top;
+        width: 100%;
+        z-index: 50;
+        >img {
+            margin: 17px 25px;
+        }
+        .profile_container {
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            span {
+                color: @white;
+                display: inline-block;
+                font: 14px/16px robotoRegular, sans-serif;
+                margin-top: 23px;
+                vertical-align: top;
+            }
+            a {
+                background-color: transparent;
+                border-left: 1px solid #3A3C46;
+                color: @white;
+                display: inline-block;
+                font: 14px/16px robotoRegular, sans-serif;
+                height: 62px;
+                margin-left: 26px;
+                padding: 24px 26px;
+                vertical-align: top;
+                &:hover {
+                    background-color: @blue;
+                }
+                &::before {
+                    background-image: url("../images/the_icon_sprite.svg");
+                    background-position: -425px -50px;
+                    content: "";
+                    display: inline-block;
+                    height: 13px;
+                    margin-right: 10px;
+                    vertical-align: top;
+                    width: 13px;
+                }
+            }
+        }
+    }
+    section {
+        &#dashbord_content {
+            margin: 0px auto 30px auto;
+            padding-top: 63px;
+            width: 978px;
+            >h2 {
+                color: @white;
+                font: 21px/24px robotoRegular, sans-serif;
+                margin: 48px 0px 7px 0px;
+            }
+            >h1 {
+                color: @font;
+                font: 17px/20px robotoRegular, sans-serif;
+                margin-bottom: 56px;
+            }
+            form {
+                position: relative;
+                textarea {
+                    background-color: #3A3C46;
+                    border-radius: 10px;
+                    border: 1px solid #3A3C46;
+                    color: @white;
+                    font: 17px/25px robotoRegular, sans-serif;
+                    height: 80px;
+                    outline: none;
+                    padding: 25px 20px;
+                    resize: none;
+                    width: 100%;
+                    &:focus {
+                        border: 1px solid @blue;;
+                    }
+                }
+                button {
+                    background-color: @blue;
+                    border-radius: 9px;
+                    border: none;
+                    color: @white;
+                    font: 14px/16px robotoMedium, sans-serif;
+                    height: 38px;
+                    margin: 21px 20px;
+                    position: absolute;
+                    right: 0px;
+                    top: 0px;
+                    width: 100px;
+                }
+            }
+            >h3 {
+                color: @white;
+                font: 16px/18px robotoRegular, sans-serif;
+                margin: 54px 0px 16px 0px;
+            }
+            #empty_forum_text {
+                border-radius: 9px;
+                border: 1px dashed #6D6E75;
+                color: @white;
+                font: 16px/18px robotoRegular, sans-serif;
+                height: 89px;
+                margin-top: 49px;
+                padding: 35px 0px;
+                text-align: center;
+            }
+            >#forum_list {
+                li {
+                    background-color: #1E1F25;
+                    border-radius: 10px;
+                    margin-bottom: 30px;
+                    padding: 23px 30px 30px 30px;
+                    width: 100%;
+                    &:last-child {
+                        margin: 0px;
+                    }
+                    &:hover {
+                        >.forum_details {
+                            .action_container {
+                                display: inline-block !important;
+                            }
+                        }
+                    }
+                    p {
+                        color: @white;
+                        font: 16px/25px robotoItalic, sans-serif;
+                        margin-bottom: 11px;
+                    }
+                    .forum_details {
+                        color: #A3A3FF;
+                        display: block;
+                        font: 14px/16px robotoRegular, sans-serif;
+                        margin-bottom: 20px;
+                        position: relative;
+                        vertical-align: top;
+                        .response_counter {
+                            border-left: 1px solid #A3A3FF;
+                            margin-left: 20px;
+                            padding-left: 20px;
+                        }
+                    }
+                }
+                .response_list {
+                    padding-left: 15px;
+                    position: relative;
+                    li {
+                        border-bottom: 1px solid #3F404A;
+                        border-radius: 0px;
+                        margin-bottom: 0px;
+                        padding-bottom: 6px;
+                        padding-left: 0px;
+                        padding-right: 0px;
+                        position: relative;
+                        form {
+                            margin-bottom: 20px;
+                        }
+                        &:hover {
+                            .action_container {
+                                bottom: 15px;
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
+            }
+            .action_container {
+                bottom: 0px;
+                display: none;
+                position: absolute;
+                right: 0px;
+                >button {
+                    background-color: #32333C;
+                    background-image: url(../images/the_icon_sprite.svg);
+                    background-position: -401px -44px;
+                    border-radius: 4px;
+                    border: 1px solid #606066;
+                    display: inline-block;
+                    height: 29px;
+                    vertical-align: top;
+                    width: 26px;
+                    &:hover {
+                        background-color: @white;
+                        border-color: @white;
+                    }
+                    &.edit_btn {
+                        background-position: -380px -44px;
+                        margin-right: 3px;
+                    }
+                }
+                >.confirm_delete_container {
+                    border-radius: 0px 4px 4px 0px;
+                    border: 1px solid #606066;
+                    display: none;
+                    height: 29px;
+                    margin-left: -5px;
+                    padding: 8px;
+                    >p {
+                        color: @white;
+                        display: inline-block;
+                        font: 10px/11px robotoSemiBold, sans-serif !important;
+                        margin: 0px;
+                        vertical-align: top;
+                    }
+                    >button {
+                        background-color: transparent;
+                        border: 0px;
+                        color: #6D7186;
+                        font: 10px/11px robotoSemiBold, sans-serif !important;
+                        vertical-align: top;
+                    }
+                    .yes_btn {
+                        color: #A3A3FF;
+                    }
+                }
+            }
+        }
+    }
+}
