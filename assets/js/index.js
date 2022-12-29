@@ -1,28 +1,32 @@
 window.onload = function() {
-    document.querySelector("form").addEventListener("submit", submitSignUpForm);
+    document.querySelector("form").addEventListener("submit", submitSignupForm);            /* To submit signup form */
 }
 
 /**
  * 
- * DOCU: To submit signup form 
- * Triggered: on submit of signup form
- * lLast updated date: November 21, 2022
- * @author Jhaver G.
+ * DOCU: To submit signup form
+ * Triggered: on submit of signup for,
+ * Last updated date: December 29, 2022
+ * @author Jhaver
  */
-function submitSignUpForm(e) {
+function submitSignupForm(e) {
     e.preventDefault();
+
     let signup_input = document.querySelectorAll("input");
-    
-    for(let signup_input_index = 0; signup_input_index < signup_input.length; signup_input_index++) {
-        let  signup_input_elelement = signup_input[signup_input_index];
-        signup_input_elelement.value == "" ? signup_input_elelement.setAttribute("class", "validation_error") : signup_input_elelement.setAttribute("class", "");
+
+    /* To check value of all inputs */
+    for(let input_index = 0; input_index < signup_input.length; input_index++) {
+        let input_element = signup_input[input_index];
+        input_element.value == "" ? input_element.setAttribute("class", "validation_error") : input_element.setAttribute("class", "");
     }
 
+    /* Form validation */
     if(document.querySelectorAll(".validation_error").length == 0) {
-        document.querySelector("button").textContent="Processing...";
+        document.querySelector("button").textContent = "Processing...";
 
-        setTimeout(() =>{
+        /* Will redirecy tp dashboard after signup */
+        setTimeout(() => {
             document.querySelector("#dashboard_link").click();
-        }, 2000);
+        }, 2000)
     }
 }

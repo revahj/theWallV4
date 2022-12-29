@@ -22,7 +22,7 @@
                 <a href="login.html" id="logout_btn">Logout</a>
             </div>
         </header>
-        <section id="dashbord_content">
+        <section id="dashboard_content">
             <h2>Hello <span class="profile_name">Jhaver</span>,</h2>
             <h1>Welcome to V88 Forum Dashboard</h1>
             <form id="post_topic_form">
@@ -30,49 +30,30 @@
                 <button type="submit">Post</button>
             </form>
             <h3>Recent Forums</h3>
-            <p id="empty_forum_text">No post yet</p>
-            <ul id="forum_list">
-                
-                
-            </ul>
+            <p class="empty_forum_text">No post yet.</p>
+            <ul id="forum_list"></ul>
         </section>
         <ul id="clone_post_container" class="hidden">
             <li>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum nec feugiat massa adipiscing. Sit at placerat nisi, sed lorem porttitor nulla aliquam fermentum. Mi curabitur consequat congue consectetur erat sed.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi soluta voluptas molestias tempore ipsam explicabo laborum magnam quo sint eos eveniet, nisi hic nostrum accusantium! Perspiciatis exercitationem hic omnis consequatur.</p>
                 <div class="forum_details">
-                    <span class="profile_name">Jhaver Gurtiza (few seconds ago)</span> <span class="response_counter">0 Responses</span> 
+                    <span class="profile_name">Jhaver Gurtiza (few sec ago)</span><span class="response_counter">0 Responses</span>
                     <div class="action_container">
-                        <button type="button" class="edit_btn" onclick="editPost(this.id)"></button>
-                        <button type="button" class="delete_btn" onclick="deletePost(this.id)"></button>
+                        <button type="button" class="edit_btn"></button>
+                        <button type="button" class="delete_btn"></button>
                         <div class="confirm_delete_container"><p>Confirm Delete?</p><button class="no_btn">No</button><button class="yes_btn">Yes</button></div>
                     </div>
                 </div>
-                <form>
-                    <textarea placeholder="Post your Response..."></textarea>
+                <form class="edit_response_form">
+                    <textarea placeholder="Post your response..."></textarea>
                     <button type="submit">Comment</button>
                 </form>
                 <ul class="response_list"></ul>
             </li>
         </ul>
-        <ul id="clone_response_container" class="hidden">
-            <li>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum nec feugiat massa adipiscing. Sit at placerat nisi, sed lorem porttitor nulla aliquam fermentum. Mi curabitur consequat congue consectetur erat sed.</p>
-                <div class="forum_details">
-                    <span class="profile_name">Jhaver Gurtiza (few seconds ago)</span> 
-                    <div class="action_container">
-                        <button type="button" class="edit_btn" onclick="editResponse(this.id)"></button>
-                        <button type="button" class="delete_btn" onclick="deleteResponse(this.id)"></button>
-                        <div class="confirm_delete_container"><p>Confirm Delete?</p><button class="no_btn">No</button><button class="yes_btn">Yes</button></div>
-                    </div>
-                </div>
-                <form class="hidden">
-                    <textarea placeholder="Post your Response..."></textarea>
-                    <button type="submit">Comment</button>
-                </form>
-            </li>
-        </ul>
     </div>
+    
     <!-- Scripts -->
     <script src="./../assets/js/wall.js"></script>
-</body>
+</body> 
 </html>

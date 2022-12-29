@@ -1,45 +1,42 @@
+body {
+  background-color: #2C2D34;
+}
 #wrapper header {
   background-color: #1E1F25;
-  position: fixed;
-  width: 100%;
   height: 62px;
-  padding: 0px 0px;
-  vertical-align: top;
-  z-index: 50;
+  position: fixed;
   top: 0px;
+  vertical-align: top;
+  width: 100%;
+  z-index: 50;
 }
-#wrapper header > img {
-  margin: 17px 25px;
+#wrapper header img {
+  margin: 17px 26px;
 }
 #wrapper header .profile_container {
   position: absolute;
   right: 0px;
   top: 0px;
 }
+#wrapper header .profile_container a,
 #wrapper header .profile_container span {
-  color: #ffffff;
+  color: #fff;
   display: inline-block;
   font: 14px/16px robotoRegular, sans-serif;
-  margin-top: 23px;
+  height: 60px;
+  padding: 22px 26px;
   vertical-align: top;
 }
 #wrapper header .profile_container a {
-  background-color: transparent;
   border-left: 1px solid #3A3C46;
-  color: #ffffff;
-  display: inline-block;
-  font: 14px/16px robotoRegular, sans-serif;
-  height: 62px;
-  margin-left: 26px;
-  padding: 24px 26px;
-  vertical-align: top;
+  text-decoration: none;
 }
 #wrapper header .profile_container a:hover {
   background-color: #00a3ff;
 }
 #wrapper header .profile_container a::before {
-  background-image: url("../images/the_icon_sprite.svg");
-  background-position: -425px -50px;
+  background-image: url("../images/the_wall_sprite_icon.svg");
+  background-position: 100% 50%;
   content: "";
   display: inline-block;
   height: 13px;
@@ -47,165 +44,174 @@
   vertical-align: top;
   width: 13px;
 }
-#wrapper section#dashbord_content {
-  margin: 0px auto 30px auto;
-  padding-top: 63px;
+#wrapper section {
+  margin: 111px auto 0px auto;
   width: 978px;
 }
-#wrapper section#dashbord_content > h2 {
-  color: #ffffff;
+#wrapper section h2 {
+  color: #fff;
   font: 21px/24px robotoRegular, sans-serif;
-  margin: 48px 0px 7px 0px;
+  margin-bottom: 7px;
 }
-#wrapper section#dashbord_content > h1 {
+#wrapper section h1 {
   color: #6d7186;
   font: 17px/20px robotoRegular, sans-serif;
   margin-bottom: 56px;
 }
-#wrapper section#dashbord_content form {
+#wrapper section form {
   position: relative;
 }
-#wrapper section#dashbord_content form textarea {
+#wrapper section form textarea {
   background-color: #3A3C46;
   border-radius: 10px;
-  border: 1px solid #3A3C46;
-  color: #ffffff;
+  border: 1px solid transparent;
+  color: #fff;
   font: 17px/25px robotoRegular, sans-serif;
   height: 80px;
   outline: none;
-  padding: 25px 20px;
+  padding: 13px 156px 20px 13px;
   resize: none;
   width: 100%;
 }
-#wrapper section#dashbord_content form textarea:focus {
+#wrapper section form textarea:focus {
   border: 1px solid #00a3ff;
 }
-#wrapper section#dashbord_content form button {
+#wrapper section form button {
   background-color: #00a3ff;
   border-radius: 9px;
   border: none;
-  color: #ffffff;
-  font: 14px/16px robotoMedium, sans-serif;
+  color: #fff;
+  font: 14px/39px robotoMedium, sans-serif;
   height: 38px;
-  margin: 21px 20px;
+  outline: none;
   position: absolute;
-  right: 0px;
-  top: 0px;
+  right: 20px;
+  top: 21px;
   width: 100px;
 }
-#wrapper section#dashbord_content > h3 {
-  color: #ffffff;
+#wrapper section h3 {
+  color: #fff;
   font: 16px/18px robotoRegular, sans-serif;
-  margin: 54px 0px 16px 0px;
+  margin-top: 54px;
 }
-#wrapper section#dashbord_content #empty_forum_text {
+#wrapper section .empty_forum_text {
   border-radius: 9px;
   border: 1px dashed #6D6E75;
-  color: #ffffff;
+  color: #fff;
+  display: block;
   font: 16px/18px robotoRegular, sans-serif;
-  height: 89px;
-  margin-top: 49px;
-  padding: 35px 0px;
+  margin-top: 10px;
+  padding: 35px;
   text-align: center;
 }
-#wrapper section#dashbord_content > #forum_list li {
+#wrapper section > #forum_list {
+  margin-top: 16px;
+}
+#wrapper section > #forum_list li {
   background-color: #1E1F25;
   border-radius: 10px;
-  margin-bottom: 30px;
-  padding: 23px 30px 30px 30px;
-  width: 100%;
+  padding: 22px 30px 28px 30px;
 }
-#wrapper section#dashbord_content > #forum_list li:last-child {
-  margin: 0px;
-}
-#wrapper section#dashbord_content > #forum_list li:hover > .forum_details .action_container {
-  display: inline-block !important;
-}
-#wrapper section#dashbord_content > #forum_list li p {
-  color: #ffffff;
+#wrapper section > #forum_list li p {
+  color: #fff;
   font: 16px/25px robotoItalic, sans-serif;
-  margin-bottom: 11px;
 }
-#wrapper section#dashbord_content > #forum_list li .forum_details {
-  color: #A3A3FF;
-  display: block;
-  font: 14px/16px robotoRegular, sans-serif;
-  margin-bottom: 20px;
+#wrapper section > #forum_list li .forum_details {
+  margin-top: 12px;
   position: relative;
+}
+#wrapper section > #forum_list li .forum_details span {
+  color: #A3A3FF;
+  display: inline-block;
+  font: 14px/16px robotoRegular, sans-serif;
   vertical-align: top;
 }
-#wrapper section#dashbord_content > #forum_list li .forum_details .response_counter {
-  border-left: 1px solid #A3A3FF;
-  margin-left: 20px;
-  padding-left: 20px;
+#wrapper section > #forum_list li .forum_details span:first-child {
+  border-right: 1px solid #A3A3FF;
+  margin-right: 16px;
+  padding-right: 16px;
 }
-#wrapper section#dashbord_content > #forum_list .response_list {
-  padding-left: 15px;
-  position: relative;
-}
-#wrapper section#dashbord_content > #forum_list .response_list li {
-  border-bottom: 1px solid #3F404A;
-  border-radius: 0px;
-  margin-bottom: 0px;
-  padding-bottom: 6px;
-  padding-left: 0px;
-  padding-right: 0px;
-  position: relative;
-}
-#wrapper section#dashbord_content > #forum_list .response_list li form {
-  margin-bottom: 20px;
-}
-#wrapper section#dashbord_content > #forum_list .response_list li:hover .action_container {
-  bottom: 15px;
+#wrapper section > #forum_list li .forum_details .action_container {
+  bottom: 5px;
   display: inline-block;
-}
-#wrapper section#dashbord_content .action_container {
-  bottom: 0px;
-  display: none;
   position: absolute;
   right: 0px;
+  vertical-align: top;
 }
-#wrapper section#dashbord_content .action_container > button {
+#wrapper section > #forum_list li .forum_details .action_container > button {
   background-color: #32333C;
-  background-image: url(../images/the_icon_sprite.svg);
-  background-position: -401px -44px;
+  background-image: url("../images/the_wall_sprite_icon.svg");
+  background-repeat: no-repeat;
   border-radius: 4px;
   border: 1px solid #606066;
-  display: inline-block;
   height: 29px;
-  vertical-align: top;
-  width: 26px;
+  width: 29px;
 }
-#wrapper section#dashbord_content .action_container > button:hover {
-  background-color: #ffffff;
-  border-color: #ffffff;
+#wrapper section > #forum_list li .forum_details .action_container > button:hover {
+  background-color: #fff;
+  border-color: #fff;
 }
-#wrapper section#dashbord_content .action_container > button.edit_btn {
-  background-position: -380px -44px;
-  margin-right: 3px;
+#wrapper section > #forum_list li .forum_details .action_container > button.edit_btn {
+  background-position: 49% 50%;
+  transition: none;
 }
-#wrapper section#dashbord_content .action_container > .confirm_delete_container {
+#wrapper section > #forum_list li .forum_details .action_container > button.edit_btn:hover {
+  background-position: -12% 50%;
+}
+#wrapper section > #forum_list li .forum_details .action_container > button.delete_btn {
+  background-position: 79% 50%;
+  transition: none;
+}
+#wrapper section > #forum_list li .forum_details .action_container > button.delete_btn:hover {
+  background-position: 19% 50%;
+}
+#wrapper section > #forum_list li .forum_details .action_container .confirm_delete_container {
+  background-color: #32333C;
   border-radius: 0px 4px 4px 0px;
   border: 1px solid #606066;
   display: none;
   height: 29px;
   margin-left: -5px;
-  padding: 8px;
+  padding: 8px 5px 9px 9px;
+  vertical-align: top;
+  width: 146px;
 }
-#wrapper section#dashbord_content .action_container > .confirm_delete_container > p {
-  color: #ffffff;
+#wrapper section > #forum_list li .forum_details .action_container .confirm_delete_container p {
+  color: #fff;
   display: inline-block;
-  font: 10px/11px robotoSemiBold, sans-serif !important;
-  margin: 0px;
+  font: 10px/11px robotoSemiBold, sans-serif;
   vertical-align: top;
 }
-#wrapper section#dashbord_content .action_container > .confirm_delete_container > button {
+#wrapper section > #forum_list li .forum_details .action_container .confirm_delete_container > button {
   background-color: transparent;
-  border: 0px;
+  border: none;
   color: #6D7186;
-  font: 10px/11px robotoSemiBold, sans-serif !important;
+  display: inline-block;
+  font: 10px/11px robotoRegular, sans-serif;
   vertical-align: top;
 }
-#wrapper section#dashbord_content .action_container > .confirm_delete_container .yes_btn {
+#wrapper section > #forum_list li .forum_details .action_container .confirm_delete_container > button.yes_btn {
   color: #A3A3FF;
+}
+#wrapper section > #forum_list li > form {
+  margin-bottom: 0px;
+  margin-top: 28px;
+}
+#wrapper section > #forum_list li .response_list li {
+  border-bottom: 1px solid #3F404A;
+  border-radius: 0px;
+  margin-left: 15px;
+  padding: 22px 0px 23px 0px;
+}
+#wrapper section > #forum_list li .response_list li:last-child {
+  border-bottom: none;
+}
+#wrapper section > #forum_list > li {
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 1045px) {
+  #wrapper section {
+    padding: 0px 26px;
+    width: 100%;
+  }
 }

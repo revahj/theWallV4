@@ -9,6 +9,12 @@ body {
 .hidden {
   display: none !important;
 }
+.show_confirmation > .forum_details .action_container {
+  display: block !important;
+}
+.show_confirmation > .forum_details .confirm_delete_container {
+  display: inline-block !important;
+}
 button {
   cursor: pointer;
 }
@@ -22,6 +28,9 @@ button:hover {
 ul {
   list-style: none;
   padding: 0px;
+}
+.edit_response_form {
+  margin-bottom: 20px;
 }
 @font-face {
   font-family: robotoBlack;

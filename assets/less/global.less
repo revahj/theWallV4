@@ -10,6 +10,17 @@ body {
 .hidden {
     display: none !important;
 }
+.show_confirmation {
+    >.forum_details {
+        .action_container {
+            display: block !important;
+            // bottom: 15px !important;
+        }
+        .confirm_delete_container {
+            display: inline-block !important;
+        }
+    }
+}
 button {
     cursor: pointer;
     &:hover {
@@ -25,6 +36,9 @@ ul {
     padding: 0px;
 }
 
+.edit_response_form {
+    margin-bottom: 20px;
+}
 @font-face {
     font-family: robotoBlack;
     src: url("../fonts/Roboto/Roboto-Black.ttf");
